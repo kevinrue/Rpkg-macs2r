@@ -16,4 +16,5 @@ Imports:
     rtracklayer
 Suggests: 
     GenomeInfoDb,
-    covr
+    covr,
+    testthat
