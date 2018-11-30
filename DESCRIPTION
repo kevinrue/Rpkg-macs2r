@@ -15,4 +15,5 @@ Depends: GenomicRanges
 Imports: 
     rtracklayer
 Suggests: 
-    GenomeInfoDb
+    GenomeInfoDb,
+    covr
