@@ -11,7 +11,7 @@ import.narrowPeaks(file, extraCols = c(FoldChange = "numeric",
 \arguments{
 \item{file}{Path a "NAME_peaks.narrowPeak" file.}
 
-\item{extraCols}{A character vector in the same form as colClasses from \code{\link{read.table.}}.
+\item{extraCols}{A character vector in the same form as colClasses from \code{\link{read.table}}.
 It should indicate the name and class of each extra/special column to read from the BED file.
 See \code{\link{import.bed}} for details.}
 
@@ -44,7 +44,7 @@ gr <- import.narrowPeaks(file)
 # seqlevels(x) may need to be switched to the adequate format
 # for downstream analyses
 library(GenomeInfoDb)
-seqlevelsStyle(narrowPeakGranges) <- "Ensembl"
+seqlevelsStyle(gr) <- "Ensembl"
 }
 \author{
 Kevin Rue-Albrecht

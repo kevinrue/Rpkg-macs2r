@@ -14,7 +14,7 @@
 #' }
 #'
 #' @param file Path a "NAME_peaks.narrowPeak" file.
-#' @param extraCols A character vector in the same form as colClasses from \code{\link{read.table.}}.
+#' @param extraCols A character vector in the same form as colClasses from \code{\link{read.table}}.
 #' It should indicate the name and class of each extra/special column to read from the BED file.
 #' See \code{\link{import.bed}} for details.
 #' @param ... Additional arguments passed to \code{import.bed}.
@@ -35,7 +35,7 @@
 #' # seqlevels(x) may need to be switched to the adequate format
 #' # for downstream analyses
 #' library(GenomeInfoDb)
-#' seqlevelsStyle(narrowPeakGranges) <- "Ensembl"
+#' seqlevelsStyle(gr) <- "Ensembl"
 import.narrowPeaks <- function(
     file,
     extraCols=c(
